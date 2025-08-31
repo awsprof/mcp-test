@@ -13,6 +13,12 @@
         "src.app:app",
         "--reload"
       ],
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "VIRTUAL_ENV": "${workspaceFolder}/.venv",
+        "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}"
+      },
       "jinja": true
     }
   ]
